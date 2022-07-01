@@ -1,0 +1,290 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.navbar-nav, .navbar {
+  margin-left: auto;
+}
+
+.brand-logo a h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  line-height: 1.42;
+  color: #FF5722;
+}
+
+.main-menu {
+  display: flex;
+}
+
+.main-menu .nav-item {
+  padding: 18px;
+  font-size: 15px;
+  line-height: 26px;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.hero-bg {
+  padding: 5rem 0;
+  background-color: rgba(0, 0, 0, 0.877);
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.hero-content {
+  padding: 3rem 0;
+}
+
+.hero-img-box {
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.hero-img-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-btn {
+  margin-right: 30px;
+}
+
+.button-box,
+.sort-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.recipe-btn,
+.sort-btn {
+  margin-right: 20px;
+}
+
+.recipe-btn:hover,
+.sort-btn:hover {
+  background-color: #FF5722;
+  color: #fff;
+}
+
+.sort-btn:hover {
+  color: #fff;
+}
+
+.recipe-grid {background-color: black;}
+
+.recipe-grid,
+.fav-grid {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 1rem;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.fav-grid .recipe-card {
+  border: 5px solid brown;
+}
+
+
+.recipe-card {
+  position: relative;
+  margin: 0 1rem 1.85rem;
+  max-width: 255px;
+  overflow: hidden;
+  border-radius: 12px;
+  animation: fadeIn 0.7s;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card-popup-box {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  transition: 0.4s;
+  z-index: 1;
+  padding: 1.25rem 1.875rem;
+  opacity: 0;
+  text-align: center;
+}
+
+.card-popup-box::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.9;
+  border-radius: 8px;
+}
+
+.recipe-card:hover .card-popup-box {
+  bottom: 20px;
+  opacity: 1;
+  cursor: pointer;
+}
+.recipe-card:hover .fav-btn {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.recipe-box-modal.modal {
+  color: #FF5722;
+  background: #fff;
+  font-size: 20px;
+}
+
+.recipe-box-modal a {
+  color: #FF5722;
+}
+
+.recipe-box-modal b {
+  color: brown;
+}
+
+.recipe-box-modal ol li::marker {
+  color: brown;
+}
+
+.recipe-box-modal h2, 
+.recipe-box-modal h3 {
+  color: #000;
+}
+
+.recipe-box-modal h3 {
+  text-decoration: underline;
+  text-decoration-color: brown;
+  font-size: 30px;
+}
+
+.modal-pic {
+  border-radius: 30px;
+  border: 1px solid #FF5722;
+}
+
+.card-popup-box div {
+  color: rgba(22, 28, 45, 0.7);
+  font-size: 0.8125rem;
+  line-height: 1.63;
+  letter-spacing: 1.63px;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.card-popup-box h3 {
+  pointer-events: none;
+  color: #161c2d;
+  font-size: 1.3125rem;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.fav-btn {
+  border-radius: 50%;
+  background: black;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  transition: all 0.35s ease-in;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.place {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+}
+
+.summary-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+@keyframes fadeIn {
+  0% {transform: scale(0.2);}
+  100% {transform: none;}
+}
+
+@media (max-width: 1012px) {
+  .hero-box {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .modal-pic {
+    max-width: 375px;
+  }
+
+  .recipe-box-modal.modal {
+    font-size: 16px;
+  }
+
+  .recipe-box-modal h2 {
+    font-size: 3rem;
+  }
+}
