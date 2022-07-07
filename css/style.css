@@ -12,7 +12,8 @@
   width: 100%;
 }
 
-.navbar-nav, .navbar {
+.navbar-nav,
+.navbar {
   margin-left: auto;
 }
 
@@ -20,7 +21,7 @@
   font-size: 1.5rem;
   letter-spacing: -0.5px;
   line-height: 1.42;
-  color: #FF5722;
+  color: #ff5722;
 }
 
 .main-menu {
@@ -82,7 +83,7 @@
 
 .recipe-btn:hover,
 .sort-btn:hover {
-  background-color: #FF5722;
+  background-color: #ff5722;
   color: #fff;
 }
 
@@ -90,7 +91,9 @@
   color: #fff;
 }
 
-.recipe-grid {background-color: black;}
+.recipe-grid {
+  background-color: black;
+}
 
 .recipe-grid,
 .fav-grid {
@@ -107,7 +110,6 @@
 .fav-grid .recipe-card {
   border: 5px solid brown;
 }
-
 
 .recipe-card {
   position: relative;
@@ -161,13 +163,13 @@
 }
 
 .recipe-box-modal.modal {
-  color: #FF5722;
+  color: #ff5722;
   background: #fff;
   font-size: 20px;
 }
 
 .recipe-box-modal a {
-  color: #FF5722;
+  color: #ff5722;
 }
 
 .recipe-box-modal b {
@@ -178,7 +180,7 @@
   color: brown;
 }
 
-.recipe-box-modal h2, 
+.recipe-box-modal h2,
 .recipe-box-modal h3 {
   color: #000;
 }
@@ -191,7 +193,7 @@
 
 .modal-pic {
   border-radius: 30px;
-  border: 1px solid #FF5722;
+  border: 1px solid #ff5722;
 }
 
 .card-popup-box div {
@@ -263,8 +265,12 @@
 }
 
 @keyframes fadeIn {
-  0% {transform: scale(0.2);}
-  100% {transform: none;}
+  0% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 @media (max-width: 1012px) {
@@ -278,6 +284,10 @@
 @media (max-width: 570px) {
   .modal-pic {
     max-width: 375px;
+  }
+
+  .hero-btn {
+    margin-right: 0;
   }
 
   .recipe-box-modal.modal {
