@@ -1,135 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
       src="https://kit.fontawesome.com/4426b52dbf.js"
       crossorigin="anonymous"
     ></script>
-  <link rel="stylesheet" href="./css/default.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Sous-Chef Helper</title>
-</head>
-<body>
-  <main id="main">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/default.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Sous-Chef Helper</title>
+  </head>
+  <body>
+    <main id="main">
+      <!-- Nav Bar -->
+      <header class="site-header">
+        <nav class="navbar">
+          <div class="brand-logo">
+            <a href="#"><h2>Sous-Chef Helper</h2></a>
+          </div>
+          <div class="navbar-nav">
+            <ul class="ul-defaults-none main-menu">
+              <li class="nav-item"><a href="#">Home</a></li>
+              <li class="nav-item" data-open="favorites">Favorites</li>
+              <li class="nav-item"><a href="#recipeSection">Recipes</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-    <!-- Nav Bar -->
-    <header class="site-header">
-      <nav class="navbar">
-        <div class="brand-logo">
-          <a href="/"><h2>Sous-Chef Helper</h2></a>
-        </div>
-        <div class="navbar-nav">
-          <ul class="ul-defaults-none main-menu">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item" data-open="favorites">Favorites</li>
-            <li class="nav-item"><a href="#recipeSection">Recipes</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero-bg">
-      <div class="container">
-        <div class="hero-box">
-        <div class="hero-content">
-          <h2 class="header-lg">Need Recipes?</h2>
-          <div class="sub-header">
-            Sous-Chef Helper has got you covered.
-            <br>
-            With 100's of recipes to choose from we promise to get you fed.
-          </div>
-          <div class="btn btn-primary round-pill hero-btn">
-            <a href="#recipeSection">Get Recipes</a>
-          </div>
-          <div class="btn btn-secondary round-pill hero-btn"  data-open="favorites">
-            View Favorites
-          </div>
-        </div>
-        <div class="hero-img-box">
-          <img src="./assests/food-tray.jpg" alt="food tray">
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <!-- Recipe Section -->
-    <section id="recipeSection">
-      <div class="container">
-        <h2 class="header-lg center">Recipes</h2>
-        <div class="button-box">
-          <div class="btn btn-main round-pill recipe-btn">
-            Beef
-          </div>
-          <div class="btn btn-main round-pill recipe-btn">
-            Chicken
-          </div>
-          <div class="btn btn-main round-pill recipe-btn">
-            Pork
-          </div>
-          <div class="btn btn-main round-pill recipe-btn">
-            Pasta
-          </div>
-          <div class="btn btn-main round-pill recipe-btn">
-            Bread
-          </div>
-        </div>
-        <div class="sort-box">
-          <div class="btn btn-main round-pill sort-btn">
-            A - Z
-          </div>
-          <div class="btn btn-main round-pill sort-btn">
-            Z - A
-          </div>
-        </div>
-      </div>
-        <div id="grid" class="recipe-grid">
-          <!-- The Styling Card -->
-          <!-- <div class="recipe-card">
-            <img src="./assests/food-tray.jpg" alt="food img">
-            <div class="card-popup-box">
-              <div>Food Type</div>
-              <h3>Food Name</h3>
+      <!-- Hero Section -->
+      <section class="hero-bg">
+        <div class="container">
+          <div class="hero-box">
+            <div class="hero-content">
+              <h2 class="header-lg">Need Recipes?</h2>
+              <div class="sub-header">
+                Sous-Chef Helper has got you covered.
+                <br />
+                With 100's of recipes to choose from we promise to get you fed.
+              </div>
+              <div class="btn btn-primary round-pill hero-btn">
+                <a href="#recipeSection">Get Recipes</a>
+              </div>
+              <div
+                class="btn btn-secondary round-pill hero-btn"
+                data-open="favorites"
+              >
+                View Favorites
+              </div>
             </div>
-          </div> -->
-        </div>
-    </section>
-
-
-    <!-- Modals -->
-
-    <!-- Favorite Modal -->
-    <div id="favorites" class="modal" data-animation="zoomInOut">
-      <i class="fas fa-times place" data-close></i>
-      <h2 class="header-lg center">Favorites</h2>
-      <div class="sort-box">
-        <div class="btn btn-main round-pill sort-btn">
-          A - Z
-        </div>
-        <div class="btn btn-main round-pill sort-btn">
-          Z - A
-        </div>
-      </div>
-      <div id="favGrid" class="fav-grid">
-<!-- The Styling Card -->
-        <!-- <div class="recipe-card">
-          <img src="./assests/food-tray.jpg" alt="food img">
-          <div class="card-popup-box">
-            <div>Food Type</div>
-            <h3>Food Name</h3>
+            <div class="hero-img-box">
+              <img src="./assests/food-tray.jpg" alt="food tray" />
+            </div>
           </div>
-        </div> -->
-  
+        </div>
+      </section>
+
+      <!-- Recipe Section -->
+      <section id="recipeSection">
+        <div class="container">
+          <h2 class="header-lg center">Recipes</h2>
+          <div class="button-box">
+            <div class="btn btn-main round-pill recipe-btn">Beef</div>
+            <div class="btn btn-main round-pill recipe-btn">Chicken</div>
+            <div class="btn btn-main round-pill recipe-btn">Pork</div>
+            <div class="btn btn-main round-pill recipe-btn">Pasta</div>
+            <div class="btn btn-main round-pill recipe-btn">Bread</div>
+          </div>
+          <div class="sort-box">
+            <div class="btn btn-main round-pill sort-btn">A - Z</div>
+            <div class="btn btn-main round-pill sort-btn">Z - A</div>
+          </div>
+        </div>
+        <div id="grid" class="recipe-grid"></div>
+      </section>
+
+      <!-- Modals -->
+
+      <!-- Favorite Modal -->
+      <div id="favorites" class="modal" data-animation="zoomInOut">
+        <i class="fas fa-times place" data-close></i>
+        <h2 class="header-lg center">Favorites</h2>
+        <div class="sort-box">
+          <div class="btn btn-main round-pill sort-btn">A - Z</div>
+          <div class="btn btn-main round-pill sort-btn">Z - A</div>
+        </div>
+        <div id="favGrid" class="fav-grid"></div>
       </div>
-    </div>
 
-    <!-- Recipe Modal -->
-    
-
-  </main>
-  <script src="./main.js"></script>
-</body>
+      <!-- Recipe Modal -->
+    </main>
+    <script src="./main.js"></script>
+  </body>
 </html>

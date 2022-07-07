@@ -1,7 +1,6 @@
-
-
 body {
   margin: 0;
+  font-family: "Lora", serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -9,7 +8,9 @@ body {
   scroll-behavior: auto;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -20,6 +21,10 @@ a {
 
 li a {
   color: black;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
 }
 
 .ul-defaults-none {
@@ -37,7 +42,6 @@ li a {
   max-width: 1140px;
 }
 
-
 .ul-defaults-none {
   list-style: none;
   margin: 0;
@@ -45,7 +49,8 @@ li a {
 }
 
 .btn {
-  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   min-width: 175px;
   display: inline-flex;
   align-items: center;
@@ -58,7 +63,7 @@ li a {
   box-shadow: 0 32px 54px rgba(3, 3, 3, 0.12);
 }
 
-.btn:not(:disabled):not(.disabled), 
+.btn:not(:disabled):not(.disabled),
 button:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
@@ -66,11 +71,11 @@ button:not(:disabled):not(.disabled) {
 .btn-primary,
 .btn-primary a {
   color: #fff;
-  background-color: #FF5722;
-  border-color: #FF5722;
+  background-color: #ff5722;
+  border-color: #ff5722;
 }
 
-.btn-secondary, 
+.btn-secondary,
 .btn-secondary a {
   color: #fff;
   background-color: transparent;
@@ -80,7 +85,7 @@ button:not(:disabled):not(.disabled) {
   border: 1px solid #fff;
 }
 
-.btn-main, 
+.btn-main,
 .btn-main a {
   color: rgba(126, 126, 126, 0.89);
   background-color: transparent;
@@ -95,6 +100,7 @@ button:not(:disabled):not(.disabled) {
 }
 
 .header-lg {
+  font-family: "Poppins", sans-serif;
   font-size: 5rem;
   letter-spacing: -2.5px;
   line-height: 1.05;
@@ -116,8 +122,6 @@ button:not(:disabled):not(.disabled) {
 .center {
   text-align: center;
 }
-
-
 
 [data-animation="zoomInOut"].modal {
   transform: scale(0.2);
